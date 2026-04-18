@@ -40,8 +40,11 @@ def index():
     return render_template("index.html", resultado=resultado)
 
 
-@app.route("/health")
+@app.route("/health", methods=["GET"])
 def health():
+    """
+    Endpoint para garantizar que el servicio este arriba
+    """
     return "OK", 200
 
 
