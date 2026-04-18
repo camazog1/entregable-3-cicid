@@ -33,3 +33,19 @@ def dividir(a, b):
     if b == 0:
         raise ZeroDivisionError("No se puede dividir por cero")
     return a / b
+
+
+def potencia(a, b):
+    """
+    funcion que recibe 2 numero y los eleva a la potencia.
+    """
+    return a**b
+
+
+def modulo(a, b):
+    """
+    funcion que recibe 2 numero y devuelve el resto de la division.
+    """
+    if b == 0:
+        raise ZeroDivisionError("No se puede dividir por cero")
+    return a % b
